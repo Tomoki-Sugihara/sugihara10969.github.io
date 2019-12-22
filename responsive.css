@@ -106,7 +106,7 @@
     margin: 10px 2.5%;
     font-size: 10px;
     text-align: center;
-    font-weight: nomal;
+　　font-family: "Helvetica Neue", Helvetica, Arial, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   }
   .line {
     display: block;
@@ -122,7 +122,7 @@
     padding: 15px 0;
     text-align: center;
     font-size: 11px;
-    font-weight: nomal;
+    font-family: "Helvetica Neue", Helvetica, Arial, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
   }
   .footer-body-frame p {
     float: none;
