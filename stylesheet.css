@@ -1,0 +1,467 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+header {
+  background-size: cover;
+  height: 580px;
+  background-position: center;
+}
+
+#header-tag {
+  display: none;
+  width: 100%;
+  height: 18px;
+  padding: 15px 0;
+  background-color: white;
+  z-index: 3;
+}
+
+#header-tag p {
+  width: 10px;
+  margin-left: 10%;
+  font-size: 15px;
+  letter-spacing: 2px;
+  color: gray;
+  float: left;
+}
+
+#header-tag img {
+  width: 20px;
+  height: 20ox;
+  margin-right: 10%;
+  float: right;
+}
+
+.header-image-frame {
+  margin: 0;
+  width: 237px;
+  height: 0px;
+}
+
+.header-image1 {
+  width: 266px;
+  height: 72px;
+  margin: 60px 0 0 40px;
+}
+
+.header-image2 {
+  display: none;
+  width: 197px;
+  height: 178px;
+  margin: 60px 0 0 40px;
+}
+
+#header-menu {
+  float: right;
+  margin: 60px 60px 0 0;
+  font-family: "Helvetica Neue", Helvetica, Arial, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+  font-size: 13px;
+  letter-spacing: 2px;
+  display: flex;
+}
+
+#header-menu a {
+  color: white;
+  margin: 0 15px;
+  padding-bottom: 10px;
+  text-decoration: none;
+}
+
+#header-menu a:hover {
+  border-bottom: 0.8px solid white;
+  transition: 0.2s;
+}
+
+body {
+  font-family: "Helvetica Neue", Helvetica, Arial, "游ゴシック", YuGothic, "ヒラギノ角ゴ ProN W3", "Hiragino Kaku Gothic ProN", "メイリオ", Meiryo, sans-serif;
+}
+
+.top {
+  padding-bottom: 100px;
+  background-color: #f6f6f6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.top-tytle {
+  text-align: center;
+  font-size: 45px;
+  font-weight: lighter;
+  margin-bottom: 80px;
+  padding-top: 120px;
+}
+
+.top-centence {
+  margin: 0 auto;
+  font-size: 19px;
+  line-height: 35px;
+}
+
+.a {
+  margin-bottom: 40px;
+}
+
+.b {
+  margin-top: 40px;
+  width: 342px;
+}
+
+.top-image {
+  width: 150px;
+  margin: 0 auto;
+}
+
+.top-image img {
+  width: 100%;
+}
+
+.product {
+  padding: 100px 0 50px 0;
+  width: 100%;
+}
+
+.tytle0 {
+  width: 70%;
+  margin: 0 auto;
+  height: 46px;
+}
+
+.tytle1 {
+  font-size: 28px;
+  float: left;
+  letter-spacing: 3px;
+}
+
+.tytle2 {
+  font-size: 14px;
+  text-decoration: none;
+  border: 1px solid black;
+  color: black;
+  float: right;
+  padding: 15px 60px;
+  opacity: 0.8;
+}
+
+.tytle2:hover {
+  color: white;
+  background-color: black;
+  transition: 0.2s;
+}
+
+.tytle3 {
+  display: none;
+  width: 42px;
+  font-size: 14px;
+  text-decoration: none;
+  border: 1px solid black;
+  color: black;
+  margin: 0 auto;
+  padding: 15px 60px;
+  opacity: 0.8;
+}
+
+.tytle3:hover {
+  color: white;
+  background-color: black;
+  transition: 0.2s;
+}
+
+.product-menu {
+  width: 75%;
+  margin: 0 auto;
+  flex-wrap: wrap;
+  overflow: hidden;
+  padding-bottom: 20px;
+  display: flex;
+}
+
+.product-menus {
+  width: 33.3%;
+  float: left;
+  font-size: 20px;
+}
+
+.product-menus a {
+  text-decoration: none;
+  display: inline-block;
+  color: black;
+  padding: 50px 0;
+}
+
+.product-menus:hover {
+  opacity: 0.75;
+  transition: 0.2s;
+}
+
+.product-menus img {
+  width: 100%;
+}
+
+.product-menus p {
+  width: 80%;
+  margin: 0 auto;
+  font-weight: bolder;
+  letter-spacing: 2px;
+}
+
+.news {
+  width: 100%;
+  background-color: #f6f6f6;
+  padding: 100px 0 50px 0;
+}
+
+.news-lists {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 75%;
+  margin: 80px auto 0 auto;
+}
+
+.news-list {
+  width: 100%;
+  margin: 0 auto;
+  height: 320px;
+}
+
+.news-list:hover {
+  opacity: 0.7;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.news-image {
+  width: 37%;
+}
+
+.news-main {
+  width: 57%;
+  float: right;
+}
+
+.news-main h {
+  font-size: 18px;
+  font-weight: bolder;
+  letter-spacing: 2px;
+  line-height: 22px;
+  display: inline-block;
+}
+
+.news-main p1 {
+  font-size: 12px;
+  display: inline-block;
+  text-align: left;
+  margin-top: 8px;
+  width: 100%;
+}
+
+.news-main p2 {
+  margin-top: 10px;
+  display: inline-block;
+  font-size: 14px;
+  opacity: 0.9;
+  line-height: 17px;
+}
+
+.sns {
+  position: relative;
+}
+
+.scrollTop-frame {
+  width: 100%;
+  top: -27px;
+  height: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+#scrollTop {
+  position: absolute;
+  top: -17px;
+  width: 40px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 42.5px;
+  transform: rotate(-90deg);
+  cursor: pointer;
+  background-color: white;
+}
+
+#scrollTop img {
+  width: 15px;
+  float: right;
+}
+
+#scrollTop:hover {
+  opacity: 0.8;
+  top: -22px;
+  transition: 0.2s;
+}
+
+.sns-menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.sns-bt {
+  box-sizing: border-box;
+  margin: 40px 10px;
+  padding: 15px;
+  text-decoration: none;
+  display: inline-block;
+  font-weight: lighter;
+  letter-spacing: 2px;
+  opacity: 0.8;
+  font-family: "Gill Sans Std Book", sans-serif;
+  font-size: 12px;
+}
+
+.facebook {
+  color: #4871a9;
+  border: #4871a9 solid 1px;
+}
+
+.facebook:hover {
+  color: white;
+  background-color: #4871a9;
+  transition: 0.2s;
+}
+
+.twitter {
+  color: #70bdd3;
+  border: #70bdd3 solid 1px;
+}
+
+.twitter:hover {
+  color: white;
+  background-color: #70bdd3;
+  transition: 0.2s;
+}
+
+.bookmark {
+  color: #2f9bcd;
+  border: #2f9bcd solid 1px;
+}
+
+.bookmark:hover {
+  color: white;
+  background-color: #2f9bcd;
+  transition: 0.2s;
+}
+
+.line {
+  display: none;
+  color: #8ec09d;
+  border: #8ec09d solid 1px;
+}
+
+.line:hover {
+  color: white;
+  background-color: #8ec09d;
+  transition: 0.2s;
+}
+
+.footer-top {
+  background-color: #939899;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-top p {
+  color: white;
+  opacity: 0.9;
+  margin: 0 15px;
+  padding: 40px 0;
+  font-size: 13px;
+  letter-spacing: 3px;
+  font-weight: lighter;
+  float: left;
+}
+
+.footer-top p:hover {
+  opacity: 0.7;
+  transition: 0.2s;
+  cursor: pointer;
+}
+
+.footer-body {
+  background-color: #656c6e;
+  padding: 35px 0;
+}
+
+.footer-body-frame {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.footer-image {
+  height: 90px;
+  width: 90px;
+  background-image: url(https://pas-pol.jp/wp-content/themes/pas-pol/dist/img/siteLogo-small@2x.png);
+  background-size: cover;
+  margin: 0;
+}
+
+.footer-image:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+.footer-centence {
+  color: white;
+  font-size: 10px;
+  float: right;
+}
