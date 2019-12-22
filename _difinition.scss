@@ -1,0 +1,34 @@
+@mixin square($length) {
+    width: $length;
+    height: $length;
+}
+
+@mixin reset {
+    margin: 0;
+    padding: 0;
+    float: none;
+}
+
+@mixin flex-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+@mixin flex-wrap {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+@mixin font($size, $space, $height) {
+    font-size: $size;
+    letter-spacing: $space;
+    line-height: $height;
+}
+  
+@mixin background-iamge($url) {
+    background-image: url($url);
+    background-size: cover;
+}
+
